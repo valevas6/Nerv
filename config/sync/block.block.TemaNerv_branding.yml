@@ -1,0 +1,25 @@
+uuid: 46270dd8-e1c1-4600-8455-135049325719
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - TemaNerv
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: TemaNerv_branding
+theme: TemaNerv
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

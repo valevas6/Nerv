@@ -1,0 +1,32 @@
+uuid: fbbcc4b9-33bb-44ae-9b1c-107225c159c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.infouser
+  module:
+    - node
+    - views
+  theme:
+    - TemaNerv
+id: TemaNerv_views_block__infouser_block_1
+theme: TemaNerv
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'views_block:infouser-block_1'
+settings:
+  id: 'views_block:infouser-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      post: post
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

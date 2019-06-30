@@ -1,0 +1,19 @@
+uuid: 8811332b-90fb-4693-8b9e-b1e3b1909cae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_keyword
+    - node.type.post
+id: node.post.field_keyword
+field_name: field_keyword
+entity_type: node
+bundle: post
+label: Keyword
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

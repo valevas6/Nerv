@@ -1,0 +1,22 @@
+uuid: a392b62b-ae4b-4d4b-8528-2dd5de783ab5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - TemaNerv
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: TemaNerv_breadcrumbs
+theme: TemaNerv
+region: navigation
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

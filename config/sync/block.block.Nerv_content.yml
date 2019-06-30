@@ -1,0 +1,22 @@
+uuid: 186b8d23-df41-48bf-b1dd-7f3be25ad764
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - Nerv
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: Nerv_content
+theme: Nerv
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

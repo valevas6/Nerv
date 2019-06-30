@@ -1,0 +1,32 @@
+uuid: fdf9ccb9-bb2b-4160-8a4e-901e983bee2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.infouser
+  module:
+    - node
+    - views
+  theme:
+    - bartik
+id: views_block__infouser_block_1
+theme: bartik
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'views_block:infouser-block_1'
+settings:
+  id: 'views_block:infouser-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      post: post
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

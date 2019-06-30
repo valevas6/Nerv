@@ -1,0 +1,24 @@
+uuid: 6ee641f1-80df-4bf1-a77d-ed5869340881
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.categories
+  module:
+    - views
+  theme:
+    - TemaNerv
+id: TemaNerv_views_block__categories_block_1
+theme: TemaNerv
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'views_block:categories-block_1'
+settings:
+  id: 'views_block:categories-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: 52110d91-b902-4e1e-b9bd-f74f93cab30d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.post
+  module:
+    - views
+  theme:
+    - Nerv
+id: Nerv_views_block__post_block_1
+theme: Nerv
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'views_block:post-block_1'
+settings:
+  id: 'views_block:post-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

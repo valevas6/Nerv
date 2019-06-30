@@ -1,0 +1,105 @@
+uuid: d6907340-609e-47ea-a4d4-7da5f56029de
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - field.field.node.post.body
+    - field.field.node.post.field_categories
+    - field.field.node.post.field_comments
+    - field.field.node.post.field_imageq
+    - field.field.node.post.field_keyword
+    - field.field.node.post.field_links
+    - node.type.post
+  module:
+    - comment
+    - ds
+    - link
+    - responsive_image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_threecol_33_34_33
+      library: layout_discovery/threecol_33_34_33
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      top:
+        - body
+        - field_imageq
+      first:
+        - field_keyword
+      second:
+        - field_links
+        - links
+      third:
+        - field_categories
+      bottom:
+        - field_comments
+id: node.post.default
+targetEntityType: node
+bundle: post
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: top
+  field_categories:
+    weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: third
+  field_comments:
+    weight: 6
+    label: above
+    settings:
+      pager_id: 0
+      view_mode: default
+    third_party_settings: {  }
+    type: comment_default
+    region: bottom
+  field_imageq:
+    weight: 1
+    label: hidden
+    settings:
+      image_link: ''
+      responsive_image_style: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: top
+  field_keyword:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: first
+  field_links:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: second
+  links:
+    weight: 4
+    region: second
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

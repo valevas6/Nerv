@@ -1,0 +1,22 @@
+uuid: 5f0812eb-e3a0-485f-812f-ef242ab8ed4f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - TemaNerv
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: TemaNerv_content
+theme: TemaNerv
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
